@@ -33,5 +33,9 @@ def get_api():
 def name():
     return "<font color=blue>เขมิกา ใจแก้ว</font> <br>เลขที่ 7 ม.4/10"
 
+@app.route('/hello/<string:name>')
+def Home(name):
+	return render_template('home.html', name_html=name)
+
 if __name__ == "__main__":
     app.run(debug=False)
