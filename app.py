@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 from flask import Flask, render_template, Response 
-Import cv2
+import cv2
 
 camera = cv2.VideoCapture('rtsp://freja.hiof.no:1935/rtplive/_definst_/hessdalen03.stream')
 
